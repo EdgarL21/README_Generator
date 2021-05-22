@@ -55,16 +55,16 @@ inquirer
       message: "What kind of license should your project have?",
       choices: [
         "apache-2.0",
-        "artistic-2.0",
         "bsd-3-clause",
-        "bsd-3-clause-clear",
-        "ecl-2.0",
-        "agpl-3.0",
-        "gpl-3.0",
+        "bsd-2-clause",
+        "epl-1.0",
+        "ipl-1.0",
         "isc",
         "mit",
-        "ncsa",
-        "unlicense",
+        "mpl-2.0",
+        "artistic-2.0",
+        "ofl-1.1",
+        "unlicnese",
         "zlib",
       ],
     },
@@ -95,8 +95,8 @@ inquirer
     console.log(data);
     // const { github, email, title, description, instructions, usage, license, contribution, test, questions } = data;
     // console.log(`Title: ${data.title}`)
-    let answers = generateMD(data);
-    fs.writeFile("READMEtest.md", answers, (err, data) =>
+    let responses = generateMD(data);
+    fs.writeFile("READMEtest.md", responses, (err, data) =>
       err ? console.log(err) : console.log("Successfully created README.md!")
     );
   });
