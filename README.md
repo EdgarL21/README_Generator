@@ -51,4 +51,7 @@ If you have any questions about the repo, open an issue or contact me directly a
 <br>
 Any questions, contact me. My email and github are above
 
-  <iframe src="https://drive.google.com/file/d/1gXdYiwlf-CdwuYa-1ZvxHvU7WDoOsPT6/preview" width="640" height="480"></iframe>
+  <iframe src="https://drive.google.com/file/d/1gXdYiwlf-CdwuYa-1ZvxHvU7WDoOsPT6/preview" width="640px" height="480px"></iframe>
+  <img src="./images/README1" alt="README Picture 1" width="640px" height="480px"> 
+  <img src="./images/README2" alt="README Picture 2" width="640px" height="480px"> 
+  <img src="./images/README3" alt="README Picture 3" width="640px" height="480px"> 
