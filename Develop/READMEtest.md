@@ -1,7 +1,8 @@
 
   <h1>ed</h1>
 
-  ![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)
+  [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/mit)
+  
 
   ## Description
   ed
@@ -25,11 +26,9 @@
   ed
 
   ## License
-  License used "ipl-1.0"<br>
-  Click here to learn about your licencse <br>
-  https://opensource.org/licenses/ipl-1.0
+  The license used is "mit"<br>
+  Click the license button at the top to learn more about your license 
   <br>
-  ![License](https://img.shields.io/badge/License-IPL%201.0-blue.svg)
 
 
 
