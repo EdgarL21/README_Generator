@@ -37,8 +37,8 @@ function renderLicense(license) {
       color = "blue";
       break;
     case "mit":
-      renderBadge = "MIT";
       renderLink = "mit";
+      renderBadge = "MIT";
       color = "yellow";
       break;
     case "mpl-2.0":
@@ -113,7 +113,6 @@ function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-
   return `
   <h1>${data.title}</h1>
 
@@ -130,7 +129,6 @@ function generateMarkdown(data) {
   * [Test](#test)
   * [Questions](#questions)
 
-
   ## Installation
   To install the necessary dependencies, run the following command:
   <p style="background-color:rgb(20, 20, 20); padding:1em">
@@ -145,21 +143,19 @@ function generateMarkdown(data) {
   Click the license button at the top to learn more about your license. 
   <br>
 
-
-
   ## Contribution
   ${data.contribution}
 
-  ## Tests
+  ## Test
   To run tests, run the following command:
   <p style="background-color:rgb(20, 20, 20); padding:1em">
   ${data.test}
   </p>
 
   ## Questions
-  If you have any questions about the repo, open an issue or contact me directly at ${
-    data.email
-  }. You can find more of my work at https://github.com/${data.github}
+  If you have any questions about the repo, open an issue or contact me directly at ${data.email}. You can find more of my work at https://github.com/${data.github}
+  <br>
+  ${data.questions}
 
   `;
 }
