@@ -1,10 +1,47 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge() {
-  // var l = generateMarkdown();
-  // console.log("This is from license");
-  // console.log(l);
-  // console.log("This is from license");
+function renderLicenseBadge(license) {
+  let renderBadge;
+
+  switch (license) {
+    case "apache-2.0":
+      renderBadge = "Apache%202.0";
+      break;
+    case "bsd-3-clause":
+      renderBadge = "BSD%203--Clause";
+      break;
+    case "bsd-2-clause":
+      renderBadge = "BSD%202--Clause";
+      break;
+    case "epl-1.0":
+      renderBadge = "EPL%201.0";
+      break;
+    case "ipl-1.0":
+      renderBadge = "IPL%201.0";
+      break;
+    case "isc":
+      renderBadge = "ISC";
+      break;
+    case "mit":
+      renderBadge = "MIT";
+      break;
+    case "mpl-2.0":
+      renderBadge = "MPL%202.0";
+      break;
+    case "artistic-2.0":
+      renderBadge = "Artistic%202.0";
+      break;
+    case "ofl-1.1":
+      renderBadge = "OFL%201.1";
+      break;
+    case "unlicnese":
+      renderBadge = "Unlicense";
+      break;
+    case "zlib":
+      renderBadge = "Zlib";
+      break;
+  }
+  return   `![License](https://img.shields.io/badge/License-${renderBadge}-blue.svg)`;
 }
 
 // renderLicenseBadge();
@@ -121,9 +158,13 @@ function generateMarkdown(data) {
   ${data.usage}
 
   ## License
-  License used "${data.license}"<br>
+  License used "${ data.license}"<br>
   Click here to learn about your licencse <br>
   ${renderLicenseLink(data.license)}
+  <br>
+  ${renderLicenseBadge(data.license)}
+
+
 
   ## Contribution
   ${data.contribution}

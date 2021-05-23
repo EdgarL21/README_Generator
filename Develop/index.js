@@ -55,8 +55,8 @@ inquirer
       message: "What kind of license should your project have?",
       choices: [
         "apache-2.0",
-        "bsd-3-clause",
-        "bsd-2-clause",
+        "bsd-3-Clause",
+        "bsd-2-Clause",
         "epl-1.0",
         "ipl-1.0",
         "isc",
